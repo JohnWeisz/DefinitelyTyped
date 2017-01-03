@@ -5,6 +5,11 @@
 
 declare type PropertyKey = string | number | symbol;
 
+interface Function {
+    /** Returns the name of the function. */
+    name: string;
+}
+
 interface IteratorResult<T> {
     done: boolean;
     value?: T;
